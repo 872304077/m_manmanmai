@@ -1,0 +1,41 @@
+@import 'base.less';
+@main-color: #ff841d;
+#article {
+    padding: 5px;
+    .brief {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        .fl-t {
+            width: 100%;
+            background-color: #EBEBEB;
+            padding: 0 10px;
+            border-bottom: 1px solid #ccc;
+            >a {
+                display: block;
+                font-size: 17px;
+                line-height: 30px;
+                font-weight: bolder;
+            }
+        } // *****表格下拉菜单************
+        .biaoge {
+            padding: 0;
+            >ul {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                border-bottom: 2px solid #ccc;
+                >li {
+                    float: left;
+                    // display: block;
+                    width: 33.333%;
+                    line-height: 30px;
+                    text-align: center;
+                    border-right: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}

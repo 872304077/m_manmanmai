@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <!-- 1. 引入index.less  注意rel="stylesheet/less"-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="less/index.less">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- 2. 引入less.js编译器文件 -->
+    <script src="lib/less/less.js"></script>
+    <!-- 3. 用服务器打开网页 -->
+</head>
+
+<body>
+    <header id="header">
+        <div class="appbanner" id="Div1">
+            <div class="applogo">
+                <img src="http://m.manmanbuy.com/download/images/logo.png">
+            </div>
+            <div class="tit">
+                慢慢买比价客户端
+                <div class="subtit">
+                    <p>掌控价格不再买贵</p>
+                    <p>500万人正在使用</p>
+                </div>
+            </div>
+            <div class="btn pull-right">
+                <a href="javascript:;" class="a-close">
+                    <i class="glyphicon glyphicon-remove-circle "></i>
+                </a>
+                <a href="http://m.manmanbuy.com/?o=download " onclick="trackEvent( 'Mobile下载'); " class="a-install ">立即安装</a>
+            </div>
+        </div>
+    </header>
+    <section id="section">
+        <div class="top-load clearfix">
+            <div class="header-logo">
+                <a href="http://m.manmanbuy.com/" title="慢慢买比价网--手机版">
+                    <img src="images/header_logo.png" alt="慢慢买比价网--手机版">
+                </a>
+            </div>
+            <div class="header-app">
+                <a href="http://m.manmanbuy.com/app.html?type=headword&amp;value=wap" onclick="trackEvent('header下载');" title="手机app下载">
+                    <img src="images/header_app.png" alt="手机app下载">
+                </a>
+            </div>
+        </div>
+        <div class="search">
+            <div class="searchtxt">
+                <input type="text" placeholder="请输入你想比价的商品">
+            </div>
+            <div class="searchbtn">
+                <input type="submit" value="搜索">
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="jxhd" style="margin-top: 10px; margin-bottom: 6px;">
+            <span>品牌排行</span>
+            <img src="http://www.zuyushop.com/wap/images/more.png" width="20" height="20">
+        </div>
+        <div class="foot-top">
+            <a href="login.aspx">登录</a>
+            <a href="reg.aspx">注册</a>
+            <a href="#" style="width: 40%; border-right:0; border-color:#c4c4c4;">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部</a>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="http://m.manmanbuy.com/app.html?type=footword&amp;value=wap" onclick="trackEvent('footer下载');" style="color: Red;">手机APP下载</a>
+                <a href="http://m.manmanbuy.com">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+                <img src="http://c.cnzz.com/wapstat.php?siteid=1256699064&amp;r=&amp;rnd=1752303062" width="0" height="0">
+            </p>
+        </div>
+    </footer>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="js/index.js "></script>
+    <script>
+    </script>
+</body>
+
+</html>

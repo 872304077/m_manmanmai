@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <!-- 1. 引入index.less  注意rel="stylesheet/less"-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="less/moneyctrl.less">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- 2. 引入less.js编译器文件 -->
+    <script src="lib/less/less.js"></script>
+    <!-- 3. 用服务器打开网页 -->
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+        <!-- 返回按钮 -->
+        <div class="back">
+            <a href="http://m.manmanbuy.com/" class="glyphicon glyphicon-chevron-left"></a>
+        </div>
+        <div class="brand">
+            <span>省钱-最新优惠</span>
+            <!-- 下载标签 -->
+            <div class="home">
+                <a href="http://m.manmanbuy.com/?o=download"><img src="./images/header_app.png" alt=""></a>
+            </div>
+        </div>
+
+    </header>
+    <section id="section">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li class="col-xs-12">
+                        <a href="d.aspx?id=247383&amp;f=weixinlist">
+                            <div class="pic"><img src="http://wnzk-img.zuyushop.com/r_img/img/20171105/14/d867c632534845ba98fdf08225e778d3.jpg"></div>
+                            <div class="clearfix info">
+                                <div class="title">KKTV U49J 49英寸 4K 液晶电视 <span>1999元包邮</span></div>
+                                <div class="other"><span class="mall">京东商城 | 11-05 14:37</span><span class="comment"><i class="icon-comment"></i>0</span></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="xiala">
+            <div class="center">
+                <button class="prev">上一页</button>
+                <input type="text" class="number" value="0">
+                <button class="next">下一页</button>
+            </div>
+        </div>
+    </section>
+    <article id="article">
+        <div class="jxhd" style="margin-top: 10px; margin-bottom: 6px;">
+            <span>品牌排行</span><img src="http://www.zuyushop.com/wap/images/more.png" width="20" height="20"></div>
+    </article>
+    <footer id="footer">
+
+        <div class="foot-top clearfix">
+            <a href="login.aspx">登录</a>
+            <a href="reg.aspx">注册</a>
+            <a href="#" style="width: 40%; border-right:0; border-color:#c4c4c4;">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部</a>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="http://m.manmanbuy.com/app.html?type=footword&amp;value=wap" onclick="trackEvent('footer下载');" style="color: Red;">手机APP下载</a>
+                <a href="http://m.manmanbuy.com">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+                <img src="http://c.cnzz.com/wapstat.php?siteid=1256699064&amp;r=&amp;rnd=1752303062" width="0" height="0">
+            </p>
+        </div>
+    </footer>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./js/saving.js"></script>
+    <script src="./lib/template/template.js"></script>
+    <script type="text/html" id="list">
+        {{each result as value i}}
+        <li class="col-xs-12">
+            <a href="./goods.html?productId={{value.productId}} ">
+                <div class="pic">{{#value.productImgSm}}</div>
+                <div class="clearfix info">
+                    <div class="title"> {{value.productName}}<span>{{value.productPinkage}}</span></div>
+                    <div class="other"><span class="mall">{{value.productTime}}</span><span class="comment"><i class="icon-comment"></i>0</span></div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+</body>
+
+</html>

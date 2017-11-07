@@ -1,0 +1,76 @@
+@import 'base.less';
+@main-color: #ff841d;
+
+
+#nav {
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 10px;
+        >div {
+            text-align: center;
+            img {
+                width: 50px;
+            }
+            >p {
+                font-size: 13px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+#article {
+    .recommend-header {
+        background-color: @main-color;
+        position: relative;
+        font-size: 20px;
+        color: #fff;
+        >p {
+            padding: 5px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        >i {
+            position: absolute;
+            font-size: 20px;
+            right: 5px;
+            top: 8px;
+        }
+    }
+    .product-list {
+        .media {
+            width: 100%;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+            a {
+                .media-left {
+                    >img {
+                        width: 100px;
+                    }
+                }
+                .media-body {
+                    >h4 {
+                        color: #333333;
+                        word-break: break-all;
+                        font-size: 15px;
+                        line-height: 19px;
+                        min-height: 57px;
+                        text-align: left;
+                        font-weight: normal;
+                        >span {
+                            color: @main-color;
+                        }
+                    }
+                    .other {
+                        .mall,
+                        .comment {
+                            font-size: 12px;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

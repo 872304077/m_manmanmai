@@ -1,0 +1,78 @@
+@import 'base.less';
+@main-color: #ff841d;
+#article {
+    .container {
+        .row {
+            >ul {
+                >li {
+                    overflow: hidden;
+                    padding: 20px;
+                    border-bottom: 1px solid #ccc;
+                    >a {
+                        position: relative;
+                        .pic {
+                            position: absolute;
+                            left: 10px;
+                            top: 0;
+                            >img {
+                                width: 100px;
+                            }
+                        }
+                        .info {
+                            margin-left: 120px;
+                            float: left;
+                            position: relative;
+                            .title {
+                                color: #333333;
+                                word-break: break-all;
+                                font-size: 15px;
+                                line-height: 19px;
+                                min-height: 57px;
+                                text-align: left;
+                                font-weight: normal;
+                                >span {
+                                    color: @main-color;
+                                }
+                            }
+                            .price{
+                                color: red;
+                                font-size: 18px;
+                            }
+                            .other {
+                                font-size: 12px;
+                                margin-top: 8px;
+                                color: #a1a1a1;
+                            }
+                            .pinglun{
+                                position: absolute;
+                                font-size: 12px;
+                                right: 15px;
+                                color: #a1a1a1;
+                                bottom: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .xiala {
+        text-align: center;
+        height: 100px;
+        background-color: #F2F2F2;
+        position: relative;
+        .center {
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            left: 50%;
+            margin-left: -130px;
+            >input {
+                margin: 0 40px;
+                width: 60px;
+                height: 30px;
+                text-align: center;
+            }
+        }
+    }
+}
